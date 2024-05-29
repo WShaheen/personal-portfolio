@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaheen's Portfolio</title>
+    <style>
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes navHoverAnimation {
+            0% {
+                transform: translateY(-5px);
+            }
+
+            50% {
+                transform: translateY(5px);
+            }
+
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('2109.webp') no-repeat center center;
+            background-size: cover;
+            animation: backgroundAnimation 45s linear infinite;
+            color: white;
+        }
+
+        header {
+
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            margin: 0;
+            padding: 10px;
+
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+
+            transition: transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            transform: scale(1.1);
+            animation: navHoverAnimation 0.6s ease-in-out;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            padding: 20px;
+
+            border-left: 4px solid #dfdfe4;
+            border-radius: 5px;
+            animation: fadeIn 2s ease-in-out;
+            transition: transform 0.3s;
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+        .project a {
+            color: #283593;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .project a:hover {
+            transform: scale(1.1);
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 5px 0;
+
+            color: #fff;
+
+            width: 100%;
+            bottom: 0;
+        }
+
+        .pdf-link {
+            display: block;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #3949ab;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .pdf-link:hover {
+            background-color: #303f9f;
+            transform: scale(1.1);
+        }
+
+        a:link {
+            color: rgba(10, 230, 238, 0.986);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgba(10, 230, 238, 0.986);
+        }
+
+        a:hover {
+            color: rgba(10, 230, 238, 0.986);
+            text-decoration: none;
+        }
+
+        a:active {
+            color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Shaheen's Portfolio</h1>
+        <p>Student of Statistics</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Shaheen, a student of statistics. Welcome to my portfolio where I showcase my projects and
+                achievements in the field of statistics.</p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+                <a href="project1.html" target="_blank">View Project 1</a>
+                <!-- <img src="link-to-image" alt="Project 1 Image"> -->
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+                <a href="project2.html" target="_blank">View Project 2</a>
+                <!-- <img src="link-to-image" alt="Project 2 Image"> -->
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:wshaheenstat@gmail.com">wshaheenstat@gmail.com</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Shaheen's Portfolio</p>
+    </footer>
+</body>
+
+</html>
